@@ -1,8 +1,0 @@
-PLACEHOLDER: This file should be replaced with your actual wallpaper image (jpg/png).
-
-Please upload the real wallpaper image named `wallpaper.jpg` to this path: `assets/wallpaper.jpg`.
-
-To upload the real wallpaper via the GitHub web UI:
-1. Open the repository on GitHub.
-2. Click Add file → Upload files.
-3. Choose your wallpaper image file and commit to the main branch.
