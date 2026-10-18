@@ -11,6 +11,7 @@
   <header class="nav">
     <div class="container nav-inner">
       <div class="brand">
+        <!-- brand-mark uses the doge icon if it's uploaded as assets/doge-icon.png; otherwise it falls back to a gradient -->
         <div class="brand-mark" aria-hidden="true" title="WindogeOS logo"></div>
         <div class="brand-text">Windoge<span class="os">OS</span></div>
       </div>
@@ -26,7 +27,9 @@
 
   <main>
     <section class="hero">
-      <div class="hero-bg" role="img" aria-label="WindogeOS wallpaper" style="background-image: url('assets/wallpaper.jpg')"></div>
+      <!-- The wallpaper file in the repo currently has spaces in its name. Use the encoded name so the background loads on Netlify. 
+           Consider renaming the file to a hyphenated name (e.g. assets/windogeos-blue-wave-wallpaper.png) to avoid future issues. -->
+      <div class="hero-bg" role="img" aria-label="WindogeOS wallpaper" style="background-image: url('assets/WindogeOS%20Blue%20Wave%20Wallpaper.png')"></div>
       <div class="container hero-inner">
         <div class="hero-content">
           <h1>Windoge<span class="os">OS</span></h1>
@@ -104,11 +107,11 @@
         </div>
 
         <div class="compare-card">
-          <h4>Google (ChromeOS)</h4>
+          <h4>Linux</h4>
           <ul>
-            <li>Web-centric platform</li>
-            <li>Deep cloud integration</li>
-            <li>Designed for simple, managed devices</li>
+            <li>Open-source ecosystems, many distributions</li>
+            <li>Highly configurable, fewer forced services by default</li>
+            <li>Great for privacy-aware users and older hardware</li>
           </ul>
         </div>
       </div>

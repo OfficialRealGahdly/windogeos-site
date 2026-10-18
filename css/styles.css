@@ -15,8 +15,8 @@ html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,Roboto,Arial
 .nav{backdrop-filter:saturate(120%) blur(6px);position:sticky;top:0;z-index:30;background:linear-gradient(180deg,rgba(2,10,24,0.45),rgba(2,10,24,0.15));border-bottom:1px solid rgba(255,255,255,0.02)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 30px rgba(0,190,255,0.12) inset;background-size:cover;background-position:center}
-.brand-mark.has-image{background-color:transparent}
+/* Use the doge icon if available (assets/doge-icon.png). The gradient is a fallback. */
+.brand-mark{width:40px;height:40px;border-radius:8px;background-image: url('assets/doge-icon.png'), linear-gradient(135deg,var(--accent),var(--accent-2));background-size:cover;background-position:center;box-shadow:0 6px 30px rgba(0,190,255,0.12) inset}
 .brand-text{font-weight:700;font-size:1.15rem}
 .brand-text .os{color:var(--accent-2);margin-left:4px}
 .nav-links{display:flex;gap:18px}
@@ -56,6 +56,9 @@ html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,Roboto,Arial
 .compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
 .compare-card{background:rgba(255,255,255,0.015);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
 .compare-card h4{margin-top:0}
+.compare-card ul{margin:12px 0 0 16px;padding:0}
+.compare-card li{margin:8px 0;line-height:1.35}
+.compare-card .badge{display:inline-block;background:linear-gradient(90deg,var(--accent-2),#00b3ff);color:white;padding:2px 8px;border-radius:999px;font-weight:700;font-size:0.9rem;margin-left:6px}
 
 /* CONTACT */
 .contact{padding-top:4px;padding-bottom:48px}
