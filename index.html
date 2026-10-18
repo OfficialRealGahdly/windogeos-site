@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>WindogeOS — Modern. Private. Fast.</title>
   <meta name="description" content="WindogeOS — a lightweight, privacy-focused desktop OS. Download the preview and learn how we compare to other platforms." />
+  <!-- Favicon / site icon (place assets/doge-icon.png in the repo to enable) -->
+  <link rel="icon" href="assets/doge-icon.png" type="image/png">
+  <meta property="og:title" content="WindogeOS — Modern. Private. Fast." />
+  <meta property="og:description" content="A modern, lightweight desktop OS focused on privacy, speed, and familiarity." />
+  <meta property="og:image" content="assets/windogeos-blue-wave-wallpaper.png" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -27,8 +32,8 @@
 
   <main>
     <section class="hero">
-      <!-- The wallpaper file in the repo currently has spaces in its name. Use the encoded name so the background loads on Netlify. 
-           Consider renaming the file to a hyphenated name (e.g. assets/windogeos-blue-wave-wallpaper.png) to avoid future issues. -->
+      <!-- The wallpaper file in the repo currently has spaces in its name. Using the encoded path here to avoid deploy errors.
+           Best practice: rename the file to assets/windogeos-blue-wave-wallpaper.png and update the path accordingly. -->
       <div class="hero-bg" role="img" aria-label="WindogeOS wallpaper" style="background-image: url('assets/WindogeOS%20Blue%20Wave%20Wallpaper.png')"></div>
       <div class="container hero-inner">
         <div class="hero-content">
