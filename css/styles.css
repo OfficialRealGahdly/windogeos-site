@@ -15,7 +15,8 @@ html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,Roboto,Arial
 .nav{backdrop-filter:saturate(120%) blur(6px);position:sticky;top:0;z-index:30;background:linear-gradient(180deg,rgba(2,10,24,0.45),rgba(2,10,24,0.15));border-bottom:1px solid rgba(255,255,255,0.02)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 30px rgba(0,190,255,0.12) inset}
+.brand-mark{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 30px rgba(0,190,255,0.12) inset;background-size:cover;background-position:center}
+.brand-mark.has-image{background-color:transparent}
 .brand-text{font-weight:700;font-size:1.15rem}
 .brand-text .os{color:var(--accent-2);margin-left:4px}
 .nav-links{display:flex;gap:18px}

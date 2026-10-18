@@ -1,0 +1,8 @@
+PLACEHOLDER: Upload the Doge icon image you provided in the chat here as `assets/doge-icon.png` (or JPG). After uploading, the site header will show it in the top-left.
+
+To upload via GitHub Web UI:
+1. Open https://github.com/OfficialRealGahdly/windogeos-site
+2. Click Add file → Upload files
+3. Select your Doge icon image and upload it to the path `assets/doge-icon.png`
+
+If you want me to add the image for you, provide a public URL to the image and I'll fetch it into the repo.
