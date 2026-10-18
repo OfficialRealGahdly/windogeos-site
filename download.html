@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WindogeOS — Downloads</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>WindogeOS — Downloads</h1>
+      <a href="index.html">← Back</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 id="release">Latest release — 1.0 (placeholder)</h2>
+      <p>ISO image (bootable): <strong>windogeOS-1.0.iso</strong> — <em>replace with real file size</em></p>
+
+      <div class="download-block">
+        <!-- Replace the href below with your actual release URL (GitHub Releases, S3, or CDN) -->
+        <a class="btn primary" id="iso-link" href="https://example.com/downloads/windogeOS-1.0.iso" download>Download ISO</a>
+        <a class="btn" id="torrent-link" href="#">Download via BitTorrent (optional)</a>
+      </div>
+
+      <h3>Security</h3>
+      <p>SHA256: <code id="sha256">Replace-with-sha256</code></p>
+      <p>Signature (GPG): <a id="gpg-link" href="#">windogeOS-1.0.iso.asc</a></p>
+
+      <h3>Verify the download</h3>
+      <pre>
+# On Linux / macOS
+sha256sum windogeOS-1.0.iso
+
+# Verify GPG signature (if you publish a signature)
+gpg --verify windogeOS-1.0.iso.asc windogeOS-1.0.iso
+      </pre>
+
+      <h3>Checksums JSON (optional)</h3>
+      <p>The site includes a JSON endpoint path <code>/downloads/latest-checksums.json</code> — you can host that file in the repo or on your server and the UI will fetch it.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© WindogeOS</p>
+  </footer>
+</body>
+</html>
