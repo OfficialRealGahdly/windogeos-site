@@ -3,46 +3,132 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WindogeOS — Home</title>
+  <title>WindogeOS — Modern. Private. Fast.</title>
+  <meta name="description" content="WindogeOS — a lightweight, privacy-focused desktop OS. Download the preview and learn how we compare to other platforms." />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>WindogeOS</h1>
-      <p class="tagline">much improve. so amaze. wow.</p>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">Windoge<span class="os">OS</span></div>
+      </div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="download.html">Downloads</a>
+        <a href="#features">Features</a>
+        <a href="#compare">Compare</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container hero-with-wallpaper">
-    <section class="hero-card">
-      <div class="hero-left">
-        <img src="assets/wallpaper.jpg" alt="WindogeOS wallpaper" class="wallpaper-img"/>
-      </div>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="WindogeOS wallpaper" style="background-image: url('assets/wallpaper.jpg')"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Windoge<span class="os">OS</span></h1>
+          <p class="lead">A modern, lightweight desktop operating system focused on privacy, speed, and familiarity.</p>
 
-      <div class="hero-right">
-        <h2>WindogeOS 1.0 (placeholder)</h2>
-        <p>Download the latest ISO, verify with SHA256 and GPG signature.</p>
+          <div class="cta">
+            <a class="btn primary" href="#" aria-disabled="true">Download (coming soon)</a>
+            <a class="btn ghost" href="download.html">Release notes</a>
+          </div>
 
-        <div class="download-block">
-          <a class="btn primary" href="download.html">Downloads</a>
-          <a class="btn" href="#install">Install Guide</a>
+          <ul class="quick-stats">
+            <li><strong>Fast boot</strong><span>Optimized kernel &amp; services</span></li>
+            <li><strong>Small footprint</strong><span>Runs well on older hardware</span></li>
+            <li><strong>Privacy first</strong><span>No telemetry by default</span></li>
+          </ul>
         </div>
 
-        <section id="install" class="install">
-          <h3>Quick install</h3>
-          <ol>
-            <li>Download the ISO from the Downloads page.</li>
-            <li>Create a bootable USB with balenaEtcher (macOS/Linux) or Rufus (Windows).</li>
-            <li>Boot from USB and follow the installer.</li>
-          </ol>
-        </section>
+        <aside class="hero-card" aria-hidden="true">
+          <div class="card-title">WindogeOS 1.0<br><em>Preview</em></div>
+          <div class="card-body">
+            <p class="muted">This is a landing/preview site. The ISO download will be available here when the release is published.</p>
+            <p class="small">SHA256 • GPG signatures will be provided with every release for verification.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Key features</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>Speed & Efficiency</h3>
+          <p>Focused services, a tuned desktop, and low memory usage keep your system fast.</p>
+        </article>
+        <article>
+          <h3>Privacy by default</h3>
+          <p>No outbound telemetry, optional permission-based services, and user-first defaults.</p>
+        </article>
+        <article>
+          <h3>Familiar UI</h3>
+          <p>A friendly UI that feels familiar to users switching from other mainstream desktops.</p>
+        </article>
+        <article>
+          <h3>Open components</h3>
+          <p>We base our work on proven open-source components and publish licenses for all included software.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="compare" class="container compare">
+      <h2>How WindogeOS compares</h2>
+      <p class="muted">Designed to be an alternative platform for users who value performance and privacy. Below is a short, high-level comparison.</p>
+
+      <div class="compare-grid">
+        <div class="compare-card">
+          <h4>WindogeOS</h4>
+          <ul>
+            <li>Privacy-first defaults</li>
+            <li>Lightweight resource usage</li>
+            <li>Open-source components</li>
+          </ul>
+        </div>
+
+        <div class="compare-card">
+          <h4>Microsoft</h4>
+          <ul>
+            <li>Broad hardware & app support</li>
+            <li>Integrated services and telemetry options</li>
+            <li>Commercial ecosystem</li>
+          </ul>
+        </div>
+
+        <div class="compare-card">
+          <h4>Google (ChromeOS)</h4>
+          <ul>
+            <li>Web-centric platform</li>
+            <li>Fast updates, deep cloud integration</li>
+            <li>Designed for simple, managed devices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Get involved</h2>
+      <p>Want to help test, translate, or contribute code and drivers? Visit our repository or open an issue.</p>
+      <div class="contact-links">
+        <a class="btn outline" href="https://github.com/OfficialRealGahdly/windogeos-site">Repository</a>
+        <a class="btn outline" href="#">Join community (TBD)</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <p>© WindogeOS. <a href="download.html">Downloads</a> · <a href="README.md">Repository</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© WindogeOS — <a href="download.html">Downloads</a> · <a href="README.md">Repo</a></div>
+        <div class="small muted">Built for previews and early testing. Always backup before installing.</div>
+      </div>
+    </div>
   </footer>
+
+  <script src="scripts/verify.js"></script>
 </body>
 </html>

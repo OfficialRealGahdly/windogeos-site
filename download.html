@@ -3,49 +3,64 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WindogeOS — Downloads</title>
+  <title>WindogeOS — Downloads & Verification</title>
+  <meta name="description" content="Download the latest WindogeOS release. Check SHA256 and verify with GPG." />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>WindogeOS — Downloads</h1>
-      <a href="index.html">← Back</a>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">Windoge<span class="os">OS</span></div>
+      </div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="download.html" class="active">Downloads</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#compare">Compare</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2 id="release">Latest release — 1.0 (placeholder)</h2>
-      <p>ISO image (bootable): <strong>windogeOS-1.0.iso</strong> — <em>replace with real file size</em></p>
+  <main class="container downloads-main">
+    <h1>Downloads</h1>
+    <p class="muted">This page will list official release downloads, checksums, and signatures when available.</p>
 
-      <div class="download-block">
-        <!-- Replace the href below with your actual release URL (GitHub Releases, S3, or CDN) -->
-        <a class="btn primary" id="iso-link" href="https://example.com/downloads/windogeOS-1.0.iso" download>Download ISO</a>
-        <a class="btn" id="torrent-link" href="#">Download via BitTorrent (optional)</a>
+    <section class="release">
+      <h2>WindogeOS 1.0 — Preview</h2>
+      <p class="small muted">Placeholder release for the landing page. Replace these links after publishing your release.</p>
+
+      <div class="download-actions">
+        <a class="btn primary" href="#" aria-disabled="true">Download ISO (placeholder)</a>
+        <a class="btn ghost" href="#">Download torrent (placeholder)</a>
       </div>
 
-      <h3>Security</h3>
-      <p>SHA256: <code id="sha256">Replace-with-sha256</code></p>
-      <p>Signature (GPG): <a id="gpg-link" href="#">windogeOS-1.0.iso.asc</a></p>
-
-      <h3>Verify the download</h3>
-      <pre>
+      <div class="verify">
+        <h3>Verify</h3>
+        <p>SHA256: <code id="sha256">Replace-with-sha256</code></p>
+        <p>Signature (GPG): <a id="gpg-link" href="#">windogeOS-1.0.iso.asc</a></p>
+        <pre>
 # On Linux / macOS
 sha256sum windogeOS-1.0.iso
 
-# Verify GPG signature (if you publish a signature)
+# Verify GPG signature (if provided)
 gpg --verify windogeOS-1.0.iso.asc windogeOS-1.0.iso
-      </pre>
-
-      <h3>Checksums JSON (optional)</h3>
-      <p>The site includes a JSON endpoint path <code>/downloads/latest-checksums.json</code> — you can host that file in the repo or on your server and the UI will fetch it.
-      </p>
+        </pre>
+      </div>
     </section>
+
   </main>
 
-  <footer class="site-footer container">
-    <p>© WindogeOS</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© WindogeOS</div>
+        <div class="small muted">Preview landing page — releases will be published here.</div>
+      </div>
+    </div>
   </footer>
+
+  <script src="scripts/verify.js"></script>
 </body>
 </html>
